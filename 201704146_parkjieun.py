@@ -76,7 +76,7 @@ def parsing_udp_header(data):
 mk_sckt = socket.socket(socket.PF_PACKET, socket.SOCK_RAW, socket.ntohs(0x800))
 i=0
 while True:
-        print("packet{0}".format(i))
+        print("packet{0}", format(i))
         data = mk_sckt.recvfrom(99999)
 
         parsing_ethernet_header(data[0][0:14])
