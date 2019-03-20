@@ -25,8 +25,8 @@ def parsing_ip_header(data) :
         ip_header = struct.unpack("!1c1c2s2s2s1c1c2s4c4c",data)
         print("=======IP header=======")
         print("ip_version:", hex(ip_header[0][0]) 
-        #print("ip_header_length:", hex(ip_header[0][1]) 
-        #print("type_of_service:", hex(ip_header[1])) 
+        print("ip_header_length:", hex(ip_header[0][1]) 
+        print("type_of_service:", hex(ip_header[1])) 
         print("total_length:", hex(ip_header[2]))
         print("identification:",hex(ip_header[3]))
 
